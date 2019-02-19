@@ -17,7 +17,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/edwinm/fastrange.git"
+		"url": "https://github.com/edwinm/range.git"
 	},
 	"author": "Edwin Martin <edwin@bitstorm.org>",
 	"license": "MIT",
