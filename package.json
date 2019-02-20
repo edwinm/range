@@ -1,9 +1,15 @@
 {
 	"name": "fastrange",
-	"version": "1.0.0",
-	"description": "The for loop for functional programming",
-	"main": "index.js",
-	"types": "index.d.ts",
+	"version": "1.1.0",
+	"description": "Create an array of numbers within a given range.",
+	"main": "range.common.js",
+	"module": "range.js",
+	"types": "range.d.ts",
+	"files": [
+		"range.common.js",
+		"range.js",
+		"range.d.ts"
+	],
 	"scripts": {
 		"build": "webpack",
 		"watch": "webpack --watch",
@@ -19,7 +25,11 @@
 		"type": "git",
 		"url": "https://github.com/edwinm/range.git"
 	},
-	"author": "Edwin Martin <edwin@bitstorm.org>",
+	"author": {
+		"name": "Edwin Martin",
+		"email": "edwin@bitstorm.org",
+		"url": "https://bitstorm.org/"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"jest": "^24.1.0",
