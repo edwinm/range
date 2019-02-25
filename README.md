@@ -16,16 +16,16 @@ $ npm install fastrange
 
 ## Usage
 
-Using a commonjs module, for use in Node:
+Using import, as a ESM module, for use with a bundler like webpack:
 
 ```js
-const { range } = require('fastrange');
+import range from 'fastrange';
 ```
 
-Using import, for use with a bundler like webpack:
+As a commonjs module, for use in Node:
 
 ```js
-import { range } from 'fastrange';
+const range = require('fastrange');
 ```
 
 Then:
@@ -51,19 +51,19 @@ Returns an array of numbers dependent of the given parameters.
 
 Type: `number`
 
-Optional, start of the range, default `0`
+Optional, start of the range, by default `0`
 
 #### stop
 
 Type: `number`
 
-End of the range, not included.
+End of the range, this value is not included in the result.
 
 #### step
 
 Type: `number`
 
-Optional, step between the numbers in the range, default `1`
+Optional, step between the numbers in the range, by default `1`
 
 ## Tests
 

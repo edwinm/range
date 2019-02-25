@@ -1,20 +1,15 @@
 {
 	"name": "fastrange",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"description": "Create an array of numbers within a given range.",
+	"license": "MIT",
 	"main": "range.common.js",
 	"module": "range.js",
 	"types": "range.d.ts",
-	"files": [
-		"range.common.js",
-		"range.js",
-		"range.d.ts"
-	],
 	"sideEffects": false,
 	"scripts": {
-		"build": "webpack",
-		"watch": "webpack --watch",
-		"test": "webpack && ./node_modules/.bin/jest"
+		"test": "node node_modules/.bin/jest",
+		"moduletest": "webpack && node moduletest/range.module-out.js"
 	},
 	"keywords": [
 		"range",
@@ -22,16 +17,20 @@
 		"fp",
 		"functionalprogramming"
 	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/edwinm/range.git"
-	},
 	"author": {
 		"name": "Edwin Martin",
 		"email": "edwin@bitstorm.org",
 		"url": "https://bitstorm.org/"
 	},
-	"license": "MIT",
+	"files": [
+		"range.common.js",
+		"range.common.js",
+		"range.d.ts"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/edwinm/range.git"
+	},
 	"devDependencies": {
 		"jest": "^24.1.0",
 		"webpack": "^4.19.0",

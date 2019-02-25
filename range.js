@@ -1,5 +1,5 @@
 /**!
- @preserve range 1.2.0
+ @preserve range 1.3.0
  @copyright 2019 Edwin Martin
  @license MIT
  */
@@ -11,7 +11,7 @@
  * @param {number} [step=1] Step size
  * @return {number[]} Array of integers in the given range
  */
-export function range(start, stop, step) {
+export default function range(start, stop, step) {
 	let n, offset, multiplicator, undefined;
 
 	if (step === undefined) {

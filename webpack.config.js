@@ -1,12 +1,10 @@
 const path = require("path");
 
 module.exports = {
-	mode: "production",
-	entry: "./range.js",
+	mode: "development",
+	entry: "./moduletest/range.module-src.js",
 	output: {
 		path: path.resolve(__dirname, "./"),
-		filename: "./range.common.js",
-		library: "range",
-		libraryTarget: "commonjs2"
+		filename: "./moduletest/range.module-out.js",
 	}
 };
