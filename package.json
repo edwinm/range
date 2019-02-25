@@ -10,6 +10,7 @@
 		"range.js",
 		"range.d.ts"
 	],
+	"sideEffects": false,
 	"scripts": {
 		"build": "webpack",
 		"watch": "webpack --watch",
