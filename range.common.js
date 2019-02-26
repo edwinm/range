@@ -1,5 +1,7 @@
+"use strict";
+
 /**!
- @preserve range 1.3.0
+ @preserve range 1.4.0
  @copyright 2019 Edwin Martin
  @license MIT
  */
@@ -11,7 +13,8 @@
  * @param {number} [step=1] Step size
  * @return {number[]} Array of integers in the given range
  */
-module.exports = function range(start, stop, step) {
+module.exports = range;
+function range(start, stop, step) {
 	let n, offset, multiplicator, undefined;
 
 	if (step === undefined) {
@@ -32,7 +35,5 @@ module.exports = function range(start, stop, step) {
 		n = -n;
 		multiplicator = -multiplicator;
 	}
-	return Array.from(new Int16Array(n)).map(
-		(a, i) => i * multiplicator + offset
-	);
-};
+	return Array.from(new Int16Array(n)).map((a, i) => i * multiplicator + offset);
+}
