@@ -23,7 +23,7 @@
 		"url": "https://bitstorm.org/"
 	},
 	"files": [
-		"range.common.js",
+		"range.js",
 		"range.common.js",
 		"range.d.ts"
 	],
