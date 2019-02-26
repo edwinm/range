@@ -16,13 +16,13 @@ $ npm install fastrange
 
 ## Usage
 
-Using import, as a ESM module, for use with a bundler like webpack:
+Using import, as a ESM module, for use with a bundler like webpack or rollup:
 
 ```js
 import range from 'fastrange';
 ```
 
-As a commonjs module, for use in Node:
+As a commonjs module, for use in Node.js:
 
 ```js
 const range = require('fastrange');
