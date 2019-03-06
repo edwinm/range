@@ -4,8 +4,8 @@
 
 Create an array of numbers within a given range.
 This is an useful alternative for the `for` loop when using a functional programming style
-where using `map` and similar functions are preferred.
-Fastrange implements the API of the `range` function in Python.
+where using `map`, `filter` and similar functions are preferred.
+Fastrange implements the `range` function known from Python.
 Fastrange is faster and more lightweight than alternative JavaScript implementations.
 
 ## Installation
@@ -64,6 +64,14 @@ End of the range, this value is not included in the result.
 Type: `number`
 
 Optional, step between the numbers in the range, by default `1`
+
+## Performance
+
+Many different implementations have been tested for perfomance and
+the fastest across browsers, using array push in a for loop,
+is being used in fastrange.
+
+- [JSPerf range implementations](https://jsperf.com/range-implementation/2)
 
 ## Tests
 
