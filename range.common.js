@@ -1,7 +1,7 @@
 "use strict";
 
 /**!
- @preserve range 1.4.0
+ @preserve range 1.5.0
  @copyright 2019 Edwin Martin
  @license MIT
  */
@@ -15,25 +15,33 @@
  */
 module.exports = range;
 function range(start, stop, step) {
-	let n, offset, multiplicator, undefined;
+	var count, offset, multiplicator, end, list, undefined;
 
 	if (step === undefined) {
 		if (stop === undefined) {
-			n = start;
+			count = start;
 			offset = 0;
 		} else {
-			n = stop - start;
+			count = stop - start;
 			offset = start;
 		}
 		multiplicator = 1;
 	} else {
-		n = Math.floor((stop - start) / step);
+		count = Math.floor((stop - start) / step);
 		offset = start;
 		multiplicator = step;
 	}
-	if (n < 0) {
-		n = -n;
+
+	if (count < 0) {
+		count = -count;
 		multiplicator = -multiplicator;
 	}
-	return Array.from(new Int16Array(n)).map((a, i) => i * multiplicator + offset);
+	end = count + offset;
+
+	list = [];
+	for (var i = offset; i < end; i++) {
+		list.push(i * multiplicator);
+	}
+
+	return list;
 }
