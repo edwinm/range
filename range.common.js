@@ -15,32 +15,25 @@
  */
 module.exports = range;
 function range(start, stop, step) {
-	var count, offset, multiplicator, end, list, undefined;
+	var list, undefined;
 
 	if (step === undefined) {
 		if (stop === undefined) {
-			count = start;
-			offset = 0;
-		} else {
-			count = stop - start;
-			offset = start;
+			stop = start;
+			start = 0;
 		}
-		multiplicator = 1;
-	} else {
-		count = Math.floor((stop - start) / step);
-		offset = start;
-		multiplicator = step;
+		step = stop > start ? 1 : -1;
 	}
-
-	if (count < 0) {
-		count = -count;
-		multiplicator = -multiplicator;
-	}
-	end = count + offset;
 
 	list = [];
-	for (var i = offset; i < end; i++) {
-		list.push(i * multiplicator);
+	if (stop > start) {
+		for (var i = start; i < stop; i += step) {
+			list.push(i);
+		}
+	} else {
+		for (var i = start; i > stop; i += step) {
+			list.push(i);
+		}
 	}
 
 	return list;
