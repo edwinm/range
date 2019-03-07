@@ -1,6 +1,4 @@
-[![Build status](https://api.travis-ci.org/edwinm/range.svg?branch=master)](https://travis-ci.org/edwinm/range)
-
-[![Coverage Status](https://coveralls.io/repos/github/edwinm/range/badge.svg?branch=master)](https://coveralls.io/github/edwinm/range?branch=master)
+[![Build status](https://api.travis-ci.org/edwinm/range.svg?branch=master)](https://travis-ci.org/edwinm/range) [![Coverage Status](https://coveralls.io/repos/github/edwinm/range/badge.svg?branch=master)](https://coveralls.io/github/edwinm/range?branch=master) [![npm version](https://badge.fury.io/js/fastrange.svg)](https://www.npmjs.com/package/fastrange)
 
 # fastrange
 
