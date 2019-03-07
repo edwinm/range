@@ -1,7 +1,7 @@
 "use strict";
 
 /**!
- @preserve range 1.5.0
+ @preserve range 1.5.1
  @copyright 2019 Edwin Martin
  @license MIT
  */
@@ -23,6 +23,8 @@ function range(start, stop, step) {
 			start = 0;
 		}
 		step = stop > start ? 1 : -1;
+	} else if (step < 0 === stop > start) {
+		throw new Error("range: invalid step value ${step}");
 	}
 
 	list = [];
