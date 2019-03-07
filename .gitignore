@@ -3,3 +3,4 @@
 node_modules
 
 /moduletest/range.module-out.js
+/coverage
