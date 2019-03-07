@@ -1,5 +1,4 @@
-[![Build status](https://api.travis-ci.org/edwinm/range.svg?branch=master)]
-(https://travis-ci.org/edwinm/range)
+[![Build status](https://api.travis-ci.org/edwinm/range.svg?branch=master)](https://travis-ci.org/edwinm/range)
 
 # fastrange
 
