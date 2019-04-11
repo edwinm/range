@@ -1,7 +1,7 @@
 "use strict";
 
 /**!
- @preserve range 1.5.1
+ @preserve range 1.5.2
  @copyright 2019 Edwin Martin
  @license MIT
  */
