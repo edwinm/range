@@ -1,6 +1,6 @@
 {
 	"name": "fastrange",
-	"version": "1.5.2",
+	"version": "1.5.3",
 	"description": "Create an array of numbers within a given range.",
 	"license": "MIT",
 	"module": "range.js",
@@ -36,10 +36,10 @@
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
-		"coveralls": "^3.0.3",
-		"jest": "^24.1.0",
-		"webpack": "^4.19.0",
-		"webpack-cli": "^3.1.0"
+		"coveralls": "^3.0.11",
+		"jest": "^25.3.0",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11"
 	},
 	"dependencies": {}
 }

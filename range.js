@@ -1,5 +1,5 @@
 /**!
- @preserve range 1.5.2
+ @preserve range 1.5.3
  @copyright 2019 Edwin Martin
  @license MIT
  */
